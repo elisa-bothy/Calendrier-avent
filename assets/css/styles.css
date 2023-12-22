@@ -1,0 +1,145 @@
+:root{
+    width: auto;
+    --primary-color:aliceblue;
+    --border-color:black;
+    --main-door-color:rgb(165, 42, 42);
+    --castle-base-color:rgb(211, 211, 211);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.castle-base{
+    position: absolute;
+    display: flex;
+    width: 500px ;
+    height: 400px;
+    border-bottom: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+}
+
+.wall-base{
+    bottom: -4px;
+    position: relative;
+}
+
+.machicolation{
+    width: 16px;
+    height: 21px;
+    border-bottom: 1px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+}
+
+.machicolation-separation{
+    width: 101px;
+    height: 25px;
+    border-bottom: 2px solid var(--border-color) ;
+}
+
+.machicolation,.machicolation-separation{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.main-door{
+    width: 203px;
+    height: 220px;
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    display: flex;
+    align-self: flex-end;
+    background-color: var(--main-door-color);
+}
+
+.castle-base, .main-door{
+    justify-content: center;
+}
+
+#brick-door1, #brick-door15{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    border-radius: 10%;
+}
+
+#brick-door2, #brick-door14{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10%;
+    bottom: 50px;
+}
+
+/*#brick-door2{left:32px}
+#brick-door14{right:32px}*/
+
+#brick-door3, #brick-door13{
+    width: 30px;
+    height: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 10%;
+    bottom: 70px;
+}
+
+#brick-door4, #brick-door12{
+    width: 20px;
+    height: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 10%;
+    bottom: 90px;
+}
+
+#brick-door5, #brick-door11{
+    width: 20px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 20%;
+    bottom: 122px;
+}
+
+#brick-door6, #brick-door10{
+    width: 25px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 20%;
+    bottom: 152px;
+}
+
+#brick-door7, #brick-door9{
+    width: 30px;
+    height: 38px;
+    border: 1px solid var(--border-color);
+    border-radius: 20%;
+    bottom: 182px;
+}
+
+#brick-door7{left: 30px; rotate: 25deg;}
+#brick-door9{right: 80px; rotate: -25deg;}
+
+#brick-door8{
+    width: 80px; 
+    height: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 20%;
+    bottom: 220px;
+    right: 101.725px;
+}
+
+.brick-door{
+    position:relative;
+    display: flex;
+    align-self: flex-end;
+}
+
+.brick-door, .main-door{
+    justify-content: center;
+}
