@@ -15,7 +15,7 @@ body{
 }
 
 .castle-base{
-    position: absolute;
+    position: relative;
     display: flex;
     flex-grow: 1;
     width: 500px ;
@@ -24,6 +24,7 @@ body{
     border-right: 2px solid var(--border-color);
     border-left: 2px solid var(--border-color);
     background-color: var(--castle-base-color);
+    left: 500px;
 }
 
 .wall-base{
@@ -47,11 +48,6 @@ body{
     border-bottom: 2px solid var(--border-color) ;
 }
 
-.machicolation,.machicolation-separation{
-    display: inline-flex;
-    justify-content: space-around;
-}
-
 .main-door{
     width: 250px;
     height: 220px;
@@ -64,7 +60,7 @@ body{
     align-self: flex-end;
     position: relative;
     background-color: var(--main-door-color);
-    left: 65px;
+    left: 15px;
     z-index: 1;
 }
 
@@ -79,8 +75,8 @@ body{
     border-radius: 10%;
 }
 
-#brick-door1{left:222px}
-#brick-door15{right:188px}
+#brick-door1{left:172px}
+#brick-door15{right:238px}
 
 #brick-door2, #brick-door14{
     width: 20px;
@@ -90,8 +86,8 @@ body{
     bottom: 54px;
 }
 
-#brick-door2{left:200px}
-#brick-door14{right:166px}
+#brick-door2{left:150px}
+#brick-door14{right:216px}
 
 #brick-door3, #brick-door13{
     width: 30px;
@@ -101,8 +97,8 @@ body{
     bottom: 78px;
 }
 
-#brick-door3{left: 168px; rotate: 1deg;}
-#brick-door13{right: 134px; rotate: -1deg;}
+#brick-door3{left: 118px; rotate: 1deg;}
+#brick-door13{right: 184px; rotate: -1deg;}
 
 #brick-door4, #brick-door12{
     width: 20px;
@@ -112,8 +108,8 @@ body{
     bottom: 130px;
 }
 
-#brick-door4{left: 152px; rotate: 15deg;}
-#brick-door12{right: 118px; rotate: -15deg;}
+#brick-door4{left: 102px; rotate: 15deg;}
+#brick-door12{right: 168px; rotate: -15deg;}
 
 #brick-door5, #brick-door11{
     width: 20px;
@@ -123,8 +119,8 @@ body{
     bottom: 162px;
 }
 
-#brick-door5{left: 145px; rotate: 35deg;}
-#brick-door11{right: 111px; rotate: -35deg;}
+#brick-door5{left: 95px; rotate: 35deg;}
+#brick-door11{right: 161px; rotate: -35deg;}
 
 #brick-door6, #brick-door10{
     width: 25px;
@@ -134,8 +130,8 @@ body{
     bottom: 188px;
 }
 
-#brick-door6{left: 141px; rotate: 45deg;}
-#brick-door10{right: 107px; rotate: -45deg;}
+#brick-door6{left: 91px; rotate: 45deg;}
+#brick-door10{right: 157px; rotate: -45deg;}
 
 #brick-door7, #brick-door9{
     width: 30px;
@@ -145,8 +141,8 @@ body{
     bottom: 206px;
 }
 
-#brick-door7{left: 144px; rotate: 68deg;}
-#brick-door9{right: 108px; rotate: -68deg;}
+#brick-door7{left: 94px; rotate: 68deg;}
+#brick-door9{right: 158px; rotate: -68deg;}
 
 #brick-door8{
     width: 60px; 
@@ -154,7 +150,7 @@ body{
     border: 1px solid var(--border-color);
     border-radius: 35%;
     bottom: 220px;
-    right: 78px;
+    right: 128px;
 }
 
 .brick-door{
@@ -191,7 +187,7 @@ body{
 #door-crack4bis{width: 60px; left: 178px; top:129px;}
 
 .door-glow{height: 20px; background-color: var(--door-glow-color) ; border-radius: 40%;}
-#door-glow1{width: 60px; top: 60px; left: 20px;}
+#door-glow1{width: 60px; top: 60px; left:20px;}
 #door-glow2{width: 40px; top: 140px; left: 130px;}
 
 .window-bottom, .window{
@@ -220,8 +216,8 @@ body{
     background-color: var(--castle-base-color);
 }
 
-#window-castle-base1{top: 85px ; left: 235px}
-#window-castle-base2{top: 85px ; right: 200px}
+#window-castle-base1{top: 85px ; left: 185px}
+#window-castle-base2{top: 85px ; right: 250px}
 
 .brick, .line{position: relative;display: block;}
 
@@ -245,8 +241,14 @@ body{
 }
 
 #brick-double{top: 9px; left: 15px;}
-#brick-castle-base1{bottom: 65px ;left: 60px;}
-#brick-castle-base2{top: 80px; right: 40px; }
-#brick-castle-base3{top: 260px; right: 180px;}
 
+#brick-castle-base1{bottom: 65px ;left: 10px;}
+#brick-castle-base2{top: 80px; right: 90px; }
+#brick-castle-base3{top: 260px; right: 230px;}
 
+.tower{
+    width: 100px;
+    height: 500px;
+    background-color: var(--castle-base-color);
+    position: absolute;
+}
