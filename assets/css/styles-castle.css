@@ -1,0 +1,252 @@
+:root{
+    width: auto;
+    --primary-color:aliceblue;
+    --border-color:black;
+    --main-door-color:rgb(163, 72, 12);
+    --castle-base-color:rgb(189, 158, 158);
+    --brick-door-color:rgb(183, 183, 183);
+    --door-glow-color:rgba(255, 255, 255, 0.199);
+    --window-color:rgb(97, 92, 86);
+    --window-shadow-color:rgb(54, 52, 50);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+.castle-base{
+    position: absolute;
+    display: flex;
+    flex-grow: 1;
+    width: 500px ;
+    height: 350px;
+    border-bottom: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+}
+
+.wall-base{
+    bottom: -4px;
+    position: relative;
+}
+
+.machicolation{
+    width: 16px;
+    height: 21px;
+    border-bottom: 1px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+}
+
+.machicolation-separation{
+    width: 101px;
+    height: 25px;
+    border-bottom: 2px solid var(--border-color) ;
+}
+
+.machicolation,.machicolation-separation{
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.main-door{
+    width: 250px;
+    height: 220px;
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-top: 2px solid var(--border-color);
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+    display: block;
+    align-self: flex-end;
+    position: relative;
+    background-color: var(--main-door-color);
+    left: 65px;
+    z-index: 1;
+}
+
+.castle-base, .main-door{
+    justify-content: center;
+}
+
+#brick-door1, #brick-door15{
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    border-radius: 10%;
+}
+
+#brick-door1{left:222px}
+#brick-door15{right:188px}
+
+#brick-door2, #brick-door14{
+    width: 20px;
+    height: 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 30%;
+    bottom: 54px;
+}
+
+#brick-door2{left:200px}
+#brick-door14{right:166px}
+
+#brick-door3, #brick-door13{
+    width: 30px;
+    height: 50px;
+    border: 1px solid var(--border-color);
+    border-radius: 25%;
+    bottom: 78px;
+}
+
+#brick-door3{left: 168px; rotate: 1deg;}
+#brick-door13{right: 134px; rotate: -1deg;}
+
+#brick-door4, #brick-door12{
+    width: 20px;
+    height: 32px;
+    border: 1px solid var(--border-color);
+    border-radius: 10%;
+    bottom: 130px;
+}
+
+#brick-door4{left: 152px; rotate: 15deg;}
+#brick-door12{right: 118px; rotate: -15deg;}
+
+#brick-door5, #brick-door11{
+    width: 20px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 20%;
+    bottom: 162px;
+}
+
+#brick-door5{left: 145px; rotate: 35deg;}
+#brick-door11{right: 111px; rotate: -35deg;}
+
+#brick-door6, #brick-door10{
+    width: 25px;
+    height: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 20%;
+    bottom: 188px;
+}
+
+#brick-door6{left: 141px; rotate: 45deg;}
+#brick-door10{right: 107px; rotate: -45deg;}
+
+#brick-door7, #brick-door9{
+    width: 30px;
+    height: 38px;
+    border: 1px solid var(--border-color);
+    border-radius: 20%;
+    bottom: 206px;
+}
+
+#brick-door7{left: 144px; rotate: 68deg;}
+#brick-door9{right: 108px; rotate: -68deg;}
+
+#brick-door8{
+    width: 60px; 
+    height: 30px;
+    border: 1px solid var(--border-color);
+    border-radius: 35%;
+    bottom: 220px;
+    right: 78px;
+}
+
+.brick-door{
+    position:relative;
+    align-self: flex-end;
+    background-color: var(--brick-door-color);
+    flex-shrink: 0;
+}
+
+.brick-door, .main-door{justify-content: center;}
+
+.door-crack, .door-glow, .door-crack-dashed{
+    z-index: 1;
+    position: relative;
+    rotate: 90deg;
+}
+
+.door-crack{border-bottom: 2px solid var(--border-color); display: absolute;}
+.door-crack-dashed{width: 4px;border-bottom: 4px solid var(--border-color);}
+
+#door-crack2{
+    width: 222px;
+    align-self: center;
+    top: 80px;
+}
+
+#door-crack1{width: 60px; top: 190px;}
+#door-crack1dashed{top: 140px; left: 28px;}
+#door-crack1bis{width: 90px; top: 72px; right: 16px;}
+#door-crack3{width:80px; left: 88px; top:9px;}
+#door-crack3bis{width:80px; left: 88px; top:145px;}
+#door-crack3dashed{left: 126px; top:91px;}
+#door-crack4{width: 40px; left: 188px; top:38px;}
+#door-crack4bis{width: 60px; left: 178px; top:129px;}
+
+.door-glow{height: 20px; background-color: var(--door-glow-color) ; border-radius: 40%;}
+#door-glow1{width: 60px; top: 60px; left: 20px;}
+#door-glow2{width: 40px; top: 140px; left: 130px;}
+
+.window-bottom, .window{
+    border: 2px solid var(--border-color);
+    position: relative;
+    display: block;
+}
+
+.window{
+    width: 40px;
+    height: 60px; 
+    border-top-right-radius: 100%; 
+    border-top-left-radius: 100%; 
+    background-color: var(--window-color);
+    box-shadow: inset 6px 2px var(--window-shadow-color);
+}
+
+.window-bottom{
+    width: 60px;
+    height: 15px;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    right: 14px; top: 60px;
+    background-color: var(--castle-base-color);
+}
+
+#window-castle-base1{top: 85px ; left: 235px}
+#window-castle-base2{top: 85px ; right: 200px}
+
+.brick, .line{position: relative;display: block;}
+
+.brick{
+    width: 30px;
+    height: 10px;
+    flex-shrink: 0;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+    border-top-right-radius: 15%;
+    border-top-left-radius: 15%;
+    border: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+}
+
+.line{
+    width: 8px;
+    rotate: 90deg;
+    border: 1px solid var(--border-color);
+    bottom: 6px; left: 5px;
+}
+
+#brick-double{top: 9px; left: 15px;}
+#brick-castle-base1{bottom: 65px ;left: 60px;}
+#brick-castle-base2{top: 80px; right: 40px; }
+#brick-castle-base3{top: 260px; right: 180px;}
+
+
