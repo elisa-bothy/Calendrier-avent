@@ -8,15 +8,26 @@
     --door-glow-color:rgba(255, 255, 255, 0.199);
     --window-color:rgb(97, 92, 86);
     --window-shadow-color:rgb(54, 52, 50);
+    --tower-shadow-color:rgba(214, 195, 195, 0.555);
+    --balcony-color:rgb(229, 198, 198);
 }
 
 body{
     background-color: var(--primary-color);
 }
 
+.castle{
+    /* pour travailler plus efficacement
+    à ne pas oublier de modifier */
+    position: relative;
+    top: 300px;
+    left: 200px;
+}
+
 .castle-base{
     position: relative;
     display: flex;
+    flex-shrink: 0;
     flex-grow: 1;
     width: 500px ;
     height: 350px;
@@ -24,15 +35,20 @@ body{
     border-right: 2px solid var(--border-color);
     border-left: 2px solid var(--border-color);
     background-color: var(--castle-base-color);
-    left: 500px;
+    left: 102px;
+    bottom: 352px;
 }
 
 .wall-base{
     bottom: -4px;
     position: relative;
+    left: 448px;
+    bottom: 23px;
+    display: inline-flex;
 }
 
 .machicolation{
+    position: relative;
     width: 16px;
     height: 21px;
     border-bottom: 1px solid var(--border-color);
@@ -43,6 +59,8 @@ body{
 }
 
 .machicolation-separation{
+    position: relative;  
+    bottom: 3px;  
     width: 101px;
     height: 25px;
     border-bottom: 2px solid var(--border-color) ;
@@ -60,13 +78,11 @@ body{
     align-self: flex-end;
     position: relative;
     background-color: var(--main-door-color);
-    left: 15px;
+    right: 187px;
     z-index: 1;
 }
 
-.castle-base, .main-door{
-    justify-content: center;
-}
+.castle-base, .main-door{justify-content: center;}
 
 #brick-door1, #brick-door15{
     width: 50px;
@@ -75,8 +91,8 @@ body{
     border-radius: 10%;
 }
 
-#brick-door1{left:172px}
-#brick-door15{right:238px}
+#brick-door1{right: 30px}
+#brick-door15{right:440px}
 
 #brick-door2, #brick-door14{
     width: 20px;
@@ -86,8 +102,8 @@ body{
     bottom: 54px;
 }
 
-#brick-door2{left:150px}
-#brick-door14{right:216px}
+#brick-door2{right: 52px}
+#brick-door14{right:418px}
 
 #brick-door3, #brick-door13{
     width: 30px;
@@ -97,8 +113,8 @@ body{
     bottom: 78px;
 }
 
-#brick-door3{left: 118px; rotate: 1deg;}
-#brick-door13{right: 184px; rotate: -1deg;}
+#brick-door3{right: 84px; rotate: 1deg;}
+#brick-door13{right: 386px; rotate: -1deg;}
 
 #brick-door4, #brick-door12{
     width: 20px;
@@ -108,8 +124,8 @@ body{
     bottom: 130px;
 }
 
-#brick-door4{left: 102px; rotate: 15deg;}
-#brick-door12{right: 168px; rotate: -15deg;}
+#brick-door4{right: 100px; rotate: 15deg;}
+#brick-door12{right: 370px; rotate: -15deg;}
 
 #brick-door5, #brick-door11{
     width: 20px;
@@ -119,8 +135,8 @@ body{
     bottom: 162px;
 }
 
-#brick-door5{left: 95px; rotate: 35deg;}
-#brick-door11{right: 161px; rotate: -35deg;}
+#brick-door5{right: 107px; rotate: 35deg;}
+#brick-door11{right: 363px; rotate: -35deg;}
 
 #brick-door6, #brick-door10{
     width: 25px;
@@ -130,8 +146,8 @@ body{
     bottom: 188px;
 }
 
-#brick-door6{left: 91px; rotate: 45deg;}
-#brick-door10{right: 157px; rotate: -45deg;}
+#brick-door6{right: 111px; rotate: 45deg;}
+#brick-door10{right: 359px; rotate: -45deg;}
 
 #brick-door7, #brick-door9{
     width: 30px;
@@ -141,8 +157,8 @@ body{
     bottom: 206px;
 }
 
-#brick-door7{left: 94px; rotate: 68deg;}
-#brick-door9{right: 158px; rotate: -68deg;}
+#brick-door7{right: 108px; rotate: 68deg;}
+#brick-door9{right: 360px; rotate: -68deg;}
 
 #brick-door8{
     width: 60px; 
@@ -150,7 +166,7 @@ body{
     border: 1px solid var(--border-color);
     border-radius: 35%;
     bottom: 220px;
-    right: 128px;
+    right: 330px;
 }
 
 .brick-door{
@@ -216,12 +232,12 @@ body{
     background-color: var(--castle-base-color);
 }
 
-#window-castle-base1{top: 85px ; left: 185px}
-#window-castle-base2{top: 85px ; right: 250px}
+#window-castle-base1{top: 85px ; right: 18px}
+#window-castle-base2{top: 85px ; right: 452px}
 
 .brick, .line{position: relative;display: block;}
 
-.brick{
+.brick, .brick-tower, .brick-towerbis{
     width: 30px;
     height: 10px;
     flex-shrink: 0;
@@ -242,13 +258,71 @@ body{
 
 #brick-double{top: 9px; left: 15px;}
 
-#brick-castle-base1{bottom: 65px ;left: 10px;}
-#brick-castle-base2{top: 80px; right: 90px; }
-#brick-castle-base3{top: 260px; right: 230px;}
+#brick-castle-base1{top: 50px;left: 19px;}
+#brick-castle-base2{top: 80px; right: 292px; }
+#brick-castle-base3{top: 260px; right: 452px;}
 
 .tower{
     width: 100px;
-    height: 500px;
+    height: 371px;
     background-color: var(--castle-base-color);
-    position: absolute;
+    position: relative;
+    display: block;
+    border: 2px solid var(--border-color);
+    z-index: 1;
+    flex-grow: 1;
+    flex-shrink: 0;
+    box-shadow: inset -16px 5px var(--tower-shadow-color);
 }
+
+#tower2{left:604px; bottom: 791px;}
+#window-tower{position:relative; top: 40px; left: 28px}
+
+.brick-tower{
+    position:relative;
+    bottom: 27px; 
+    left: 67px; 
+    box-shadow: inset -15px 0px var(--tower-shadow-color);
+}
+
+.brick-towerbis{position:relative; top: 120px; }
+
+#glow-tower{position:relative; top: 90px; right: 36px;width: 100px;}
+
+.balcony{
+    width: 118px; 
+    height: 20px; 
+    border: 2px solid var(--border-color);
+    background-color: var(--balcony-color);
+    position: relative;
+    right: 12px;
+    bottom: 22px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    display: inline-flex;
+}
+.pic{
+    width: 30px; 
+    height: 15px; 
+    position: relative;
+    bottom: 17px;
+    right: 2px;
+    display: flex;
+    flex-shrink: 0;
+    border-top: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    background-color: var(--balcony-color);
+    border-top-right-radius: 20%;
+    border-top-left-radius: 20%;
+}
+
+.pic-separation{
+    width: 10px;
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    bottom: 20px;
+}
+
+
