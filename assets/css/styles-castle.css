@@ -10,6 +10,10 @@
     --window-shadow-color:rgb(54, 52, 50);
     --tower-shadow-color:rgba(214, 195, 195, 0.555);
     --balcony-color:rgb(229, 198, 198);
+    --balcony-shadow-color: rgba(179, 148, 148, 0.555);
+    --tower-roof-color:rgb(182, 62, 92);
+    --tower-roof-shadow-color:rgb(142, 22, 52, 0.555);
+    --tower-roof-sun-color:rgb(222, 102, 132, 0.555);
 }
 
 body{
@@ -20,8 +24,7 @@ body{
     /* pour travailler plus efficacement
     à ne pas oublier de modifier */
     position: relative;
-    top: 300px;
-    left: 200px;
+    left: 1000px;
 }
 
 .castle-base{
@@ -275,7 +278,8 @@ body{
     box-shadow: inset -16px 5px var(--tower-shadow-color);
 }
 
-#tower2{left:604px; bottom: 791px;}
+#tower1{top: 375px;}
+#tower2{left:604px; bottom: 1304px;}
 #window-tower{position:relative; top: 40px; left: 28px}
 
 .brick-tower{
@@ -290,6 +294,7 @@ body{
 #glow-tower{position:relative; top: 90px; right: 36px;width: 100px;}
 
 .balcony{
+    z-index: 2;
     width: 118px; 
     height: 20px; 
     border: 2px solid var(--border-color);
@@ -300,6 +305,7 @@ body{
     border-bottom-left-radius: 20%;
     border-bottom-right-radius: 20%;
     display: inline-flex;
+    box-shadow: inset -30px 0px var(--balcony-shadow-color);
 }
 .pic{
     width: 30px; 
@@ -317,6 +323,8 @@ body{
     border-top-left-radius: 20%;
 }
 
+#last-pic{box-shadow: inset -30px 0px var(--balcony-shadow-color);}
+
 .pic-separation{
     width: 10px;
     position: relative;
@@ -325,4 +333,116 @@ body{
     bottom: 20px;
 }
 
+.castle-base-second-floor{
+    position: relative;
+    z-index: -1;
+    bottom: 905px ;
+    left: 52px;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 600px ;
+    height: 200px;
+    border-bottom: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+    box-shadow: inset 0px 10px var(--tower-shadow-color);
+}
 
+#window-castle-second-floor1{position: relative; top: 50px;left: 100px;}
+#window-castle-second-floor2{position: relative; top: 50px;left: 235px;}
+#window-castle-second-floor3{position: relative; top: 50px;left: 370px;}
+#balcony-second-floor{width: 690px; flex-shrink: 0; right:180px;}
+
+.castle-separation, .castle-separation-roof, .roof-brick, .tile{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1;    
+    border: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+}
+
+.castle-separation{
+    width: 100px ;
+    height: 200px;
+    box-shadow: inset 16px 5px var(--tower-shadow-color);
+}
+
+.castle-separation-roof{ 
+    width: 100px ;
+    height: 27px;
+    bottom: 31px;
+    right: 2px;
+}
+
+.tile{
+    width: 30px; 
+    height: 13px; 
+    border-top-right-radius: 100%; 
+    border-top-left-radius: 100%;
+    right: 133px;
+}
+
+.roof-brick{width: 40px;height: 10px;top: 15px; right: 15px;}
+#castle-separation1{right: 102px; top: 750px;}
+#tower3{right: 204px; top:1004px;}
+#castle-separation2{left: 706px; bottom: 1508px;}
+#tower4{left: 808px; bottom:1833px;}
+
+.tower-second-floor, .tower-roof{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-grow: 1; 
+}
+
+.tower-second-floor{ 
+    border: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+    width: 80px;
+    height: 120px;
+    bottom: 280px;
+    left: 8px;
+    box-shadow: inset -10px 3px var(--tower-shadow-color);
+}
+
+#window-tower-roof{left: 18px; top: 10px;}
+
+.tower-roof{
+    width: 0px;
+    height: 0px;
+    border-style: solid;
+    border-width: 0 60px 130px 60px;
+    border-color: transparent transparent var(--tower-roof-color);
+    bottom: 554px;
+    right: 10px;
+}
+
+#tower-roof-border{
+    z-index: -1;
+    bottom: 687px;
+    right: 13px;
+    border-width: 0 63px 135px 63px;
+    border-color: transparent transparent var(--border-color);
+}
+
+#tower-roof-shadow{
+    z-index: 2;
+    bottom: 923px;
+    left: 35px;
+    border-width: 0 0 135px 63px;
+    border-color: transparent transparent var(--tower-roof-shadow-color);
+}
+
+#tower-roof-sun{
+    z-index: 2;
+    bottom: 937px;
+    left: 63px;
+    border-width: 100px 53px 115px 0;
+    border-color: transparent transparent var(--tower-roof-sun-color);
+}
+
+#tower5{z-index: -1;bottom: 231px;right: 102px;}
+#tower6{z-index: -1;left: 706px; bottom:1160px;}
