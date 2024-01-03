@@ -5,16 +5,20 @@
     --main-door-color:rgb(163, 72, 12);
     --castle-base-color:rgb(189, 158, 158);
     --brick-door-color:rgb(183, 183, 183);
+    --brick-door-shadow-color:rgb(143, 143, 143);
     --door-glow-color:rgba(255, 255, 255, 0.199);
     --window-color:rgb(97, 92, 86);
     --window-shadow-color:rgb(54, 52, 50);
-    --tower-shadow-color:rgba(214, 195, 195, 0.555);
+    --tower-shadow-color:rgba(159, 118, 118, 0.555);
     --balcony-color:rgb(229, 198, 198);
     --balcony-shadow-color: rgba(179, 148, 148, 0.555);
     --tower-roof-color:rgb(182, 62, 92);
     --tower-roof-shadow-color:rgb(142, 22, 52, 0.555);
     --tower-roof-sun-color:rgb(222, 102, 132, 0.555);
+    --flag-color:rgb(92, 64, 129);
 }
+
+/*--tower-shadow-color:rgba(214, 195, 195, 0.555);*/
 
 body{
     background-color: var(--primary-color);
@@ -177,6 +181,7 @@ body{
     align-self: flex-end;
     background-color: var(--brick-door-color);
     flex-shrink: 0;
+    box-shadow: inset -6px 2px var(--brick-door-shadow-color);
 }
 
 .brick-door, .main-door{justify-content: center;}
@@ -275,11 +280,11 @@ body{
     z-index: 1;
     flex-grow: 1;
     flex-shrink: 0;
-    box-shadow: inset -16px 5px var(--tower-shadow-color);
+    box-shadow: inset -16px 7px var(--tower-shadow-color);
 }
 
 #tower1{top: 375px;}
-#tower2{left:604px; bottom: 1304px;}
+#tower2{left:604px; bottom: 2294px;}
 #window-tower{position:relative; top: 40px; left: 28px}
 
 .brick-tower{
@@ -388,10 +393,10 @@ body{
 .roof-brick{width: 40px;height: 10px;top: 15px; right: 15px;}
 #castle-separation1{right: 102px; top: 750px;}
 #tower3{right: 204px; top:1004px;}
-#castle-separation2{left: 706px; bottom: 1508px;}
-#tower4{left: 808px; bottom:1833px;}
+#castle-separation2{left: 706px; bottom: 2498px;}
+#tower4{left: 808px; bottom:2823px;}
 
-.tower-second-floor, .tower-roof{
+.tower-second-floor, .tower-roof, .flagpole, .flag, #flag2, #flag3, #flag4, #flag5, .roof-tile{
     position: relative;
     display: flex;
     flex-shrink: 0;
@@ -416,13 +421,13 @@ body{
     border-style: solid;
     border-width: 0 60px 130px 60px;
     border-color: transparent transparent var(--tower-roof-color);
-    bottom: 554px;
+    bottom: 734px;
     right: 10px;
 }
 
 #tower-roof-border{
     z-index: -1;
-    bottom: 687px;
+    bottom: 867px;
     right: 13px;
     border-width: 0 63px 135px 63px;
     border-color: transparent transparent var(--border-color);
@@ -430,19 +435,165 @@ body{
 
 #tower-roof-shadow{
     z-index: 2;
-    bottom: 923px;
-    left: 35px;
-    border-width: 0 0 135px 63px;
+    bottom: 990px;
+    left: 57px;
+    rotate: -2deg;
+    border-width: 0px 50px 121px 0;
     border-color: transparent transparent var(--tower-roof-shadow-color);
 }
 
-#tower-roof-sun{
-    z-index: 2;
-    bottom: 937px;
-    left: 63px;
-    border-width: 100px 53px 115px 0;
-    border-color: transparent transparent var(--tower-roof-sun-color);
+#tower-roof-sun{z-index: 2; border: transparent;}
+#tower-roof-glow{width: 40px; bottom: 489px;left: 20px;}
+
+.flagpole{
+    width: 0px;
+    height: 120px;
+    border: 1px solid var(--border-color);
+    bottom: 701px;
+    left: 49px;
 }
 
-#tower5{z-index: -1;bottom: 231px;right: 102px;}
-#tower6{z-index: -1;left: 706px; bottom:1160px;}
+.flag{
+    width: 40px;
+    height: 30px;
+    border: 2px solid var(--border-color);
+    background-color: var(--flag-color);
+}
+
+#flag1{bottom: 821px; left: 50px;}
+
+#flag2{  
+    z-index: 2; 
+    flex-grow: 0;
+    width: 0;
+    height: 0;
+    left: 40px;
+    border-top: 17px solid var(--flag-color);
+    border-right: 35px solid transparent;
+}
+
+#flag3{
+    z-index: 2;
+    flex-grow: 0;
+    width: 0;
+    height: 0;
+    left: 5px;
+    top: 13px;
+    border-right : 35px solid transparent;
+    border-bottom : 17px solid var(--flag-color);
+}
+
+#flag4{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    bottom: 2px;
+    right: 28px;
+    border-right: 40px solid transparent;
+    border-top: 20px solid var(--border-color);
+}
+
+#flag5{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    right: 68px;
+    top: 12px;
+    border-right: 40px solid transparent;
+    border-bottom: 20px solid var(--border-color);
+}
+
+.roof-tile{
+    width: 15px;
+    height: 10px;
+    border-bottom: 2px solid var(--border-color);
+    border-bottom-left-radius: 100% ;
+    border-bottom-right-radius: 100%;
+}
+
+#roof-tile1{z-index: 2; bottom: 500px; left: 42px;}
+#roof-tile2{z-index: 2; bottom: 470px; left: 20px;}
+#roof-tile3{left: 15px;}
+
+#tower5{z-index: -1;bottom: 51px;right: 102px;}
+#tower6{z-index: -2;left: 706px; bottom:1970px;}
+
+#third-floor-main-catle{
+    position: relative;
+    display: flex;
+    z-index: -2;
+    flex-shrink: 0;
+    flex-grow: 1;
+    width: 130px ;
+    height: 200px;
+    bottom: 1281px;
+    left: 289px;
+    border-bottom: 2px solid var(--border-color);
+    border-right: 2px solid var(--border-color);
+    border-left: 2px solid var(--border-color);
+    background-color: var(--castle-base-color);
+    box-shadow: inset -13px 8px var(--tower-shadow-color);
+}
+#window-main-castle-third-floor{left:42px;top:25px;}
+#main-castle-roof{bottom: 1915px;left: 270px;border-width: 0 85px 180px 85px;}
+
+#main-castle-roof-border{
+    z-index: -1;
+    bottom: 2098px;
+    left: 267px;
+    border-width: 0 88px 185px 88px;
+    border-color: transparent transparent var(--border-color);
+}
+#main-castle-roof-shadow{
+    z-index: 2;
+    bottom: 2270px;
+    left: 363px;
+    rotate: -1deg;
+    border-width: 0px 75px 171px 0;
+    border-color: transparent transparent var(--tower-roof-shadow-color);
+}
+#main-castle-roof-sun{border: transparent;}
+#main-castle-roof-glow{bottom: 1580px;left: 298px;width: 80PX;}
+#main-castle-roof-tile1{bottom: 1615px;left: 321px; z-index: 2;}
+#main-castle-roof-tile2{bottom: 1560px;left: 343px;z-index: 2;}
+#main-castle-flagpole{bottom: 1853px;left: 354px;height: 150px;}
+#main-castle-flag1{bottom: 2002px;left: 355px;height: 50px; width: 60px;}
+#main-castle-flag2, #main-castle-flag3, #main-castle-flag4, #main-castle-flag5{position: relative;}
+
+#main-castle-flag2{ 
+    z-index: 2; 
+    flex-grow: 0;
+    width: 0;
+    height: 0;
+    left: 60px;
+    border-top: 47px solid var(--flag-color);
+    border-right: 70px solid transparent;      
+}
+#main-castle-flag3{
+    z-index: 2;
+    flex-grow: 0;
+    width: 0;
+    height: 0;
+    right: 10px;
+    top: 3px;
+    border-right : 70px solid transparent;
+    border-bottom : 47px solid var(--flag-color);
+}
+#main-castle-flag4{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    bottom: 2px;
+    right: 78px;
+    border-right: 73px solid transparent;
+    border-top: 50px solid var(--border-color);
+}
+#main-castle-flag5{
+    z-index: 1;
+    width: 0;
+    height: 0;
+    right: 151px;
+    top: 2px;
+    border-right: 73px solid transparent;
+    border-bottom: 50px solid var(--border-color);
+}
