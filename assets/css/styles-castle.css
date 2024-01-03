@@ -28,7 +28,7 @@ body{
     /* pour travailler plus efficacement
     à ne pas oublier de modifier */
     position: relative;
-    left: 1000px;
+    left: 500px;
 }
 
 .castle-base{
@@ -392,9 +392,9 @@ body{
 
 .roof-brick{width: 40px;height: 10px;top: 15px; right: 15px;}
 #castle-separation1{right: 102px; top: 750px;}
-#tower3{right: 204px; top:1004px;}
+#tower3{right: 204px; top:954px; height: 321px;}
 #castle-separation2{left: 706px; bottom: 2498px;}
-#tower4{left: 808px; bottom:2823px;}
+#tower4{height:321px;left: 808px; bottom:2823px;}
 
 .tower-second-floor, .tower-roof, .flagpole, .flag, #flag2, #flag3, #flag4, #flag5, .roof-tile{
     position: relative;
