@@ -1,1 +1,618 @@
-pas important juste pour créer un main;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Meilleur Calendrier de l'avent</title>
+  <link rel="shortcut icon" href="assets/photos/jumpcastle.png">
+  <link rel="stylesheet" href="assets/css/styles-castle.css">
+  <link rel="stylesheet" href="./assets/css/background.css" />
+</head>
+
+<body>
+  <!-- wrapper for positioning -->
+  <div class="wrapper">
+    <!-- snow -->
+    <div class="snowflakes">
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+      <div class="snowflake">
+        <div class="inner">❅</div>
+      </div>
+    </div>
+
+    <!-- Header section -->
+    <header>
+      <nav>
+        <div class="menu">
+          <ul>
+            <li>
+              <input type="checkbox" id="toggleButton" class="day-night" />
+              <label for="toggleButton" onclick="toggleTime()"><img src="./assets/img/icons/day_and_night.svg"
+                  alt="icon-day-night" /></label>
+            </li>
+            <li>
+              <input type="checkbox" id="toggleButton" class="snow" />
+              <label for="toggleButton" onclick="toggleSnow()"><img src="./assets/img/icons/snow-flake-icon-2.svg"
+                  alt="snow-icon" /></label>
+            </li>
+            <li>
+              <input type="checkbox" id="toggleButton1" class="bulb-light" />
+              <label for="toggleButton" onclick="toggleLight()"><img src="./assets/img/icons/lightbulb.svg"
+                  alt="bulb-icon" /></label>
+            </li>
+          </ul>
+        </div>
+        <h1>Calendrier de l'Avent</h1>
+      </nav>
+    </header>
+    <!-- End of header section -->
+    <!-- Main section -->
+    <main>
+      <!-- clouds -->
+      <section class="background-section">
+        <div class="c1">
+          <div class="cloud">
+            <span class="shadow"></span>
+          </div>
+        </div>
+        <div class="c2">
+          <div class="cloud">
+            <span class="shadow"></span>
+          </div>
+        </div>
+        <div class="c3">
+          <div class="cloud">
+            <span class="shadow"></span>
+          </div>
+        </div>
+        <div class="c4">
+          <div class="cloud">
+            <span class="shadow"></span>
+          </div>
+        </div>
+        <div class="c5">
+          <div class="cloud">
+            <span class="shadow"></span>
+          </div>
+        </div>
+        <div class="sun"></div>
+        <div class="stars">
+          <div class="star1"></div>
+          <div class="star2"></div>
+          <div class="star3"></div>
+          <div class="star4"></div>
+          <div class="star5"></div>
+          <div class="star6"></div>
+          <div class="star7"></div>
+          <div class="star8"></div>
+          <div class="star9"></div>
+          <div class="star10"></div>
+          <div class="star11"></div>
+          <div class="star12"></div>
+          <div class="star13"></div>
+          <div class="star14"></div>
+          <div class="star15"></div>
+          <div class="star16"></div>
+          <div class="star17"></div>
+          <div class="star18"></div>
+          <div class="star19"></div>
+          <div class="star20"></div>
+        </div>
+
+        <!-- End of clouds -->
+      </section>
+
+      <!-- wrapper here for background -->
+      <div class="snowman">
+        <!-- snowman will be here -->
+
+      </div>
+      <div class="windows">
+
+      </div>
+      <!-- castle -->
+      <div class="castle">
+        <div class="tower" id="tower3">
+          <div class="balcony" id="balcony-tower3">
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic" id="last-pic"></div>
+          </div>
+          <div class="door-glow" id="glow-tower"></div>
+          <div class="window" id="window-tower">
+            <div class="window-bottom" id="window-bottom-tower"></div>
+          </div>
+          <div class="brick-tower" id="brick-tower3">
+            <div class="line"></div>
+          </div>
+          <div class="brick-towerbis" id="brick-towerbis3">
+            <div class="line"></div>
+            <div class="brick" id="brick-double"></div>
+          </div>
+          <div class="tower-second-floor">
+            <div class="window" id="window-tower-roof">
+              <div class="window-bottom" id="window-bottom-tower-roof"></div>
+            </div>
+          </div>
+          <div class="door-glow" id="tower-roof-glow"></div>
+          <div class="roof-tile" id="roof-tile1"></div>
+          <div class="roof-tile" id="roof-tile2">
+            <div class="roof-tile" id="roof-tile3"></div>
+          </div>
+          <div class="flagpole"></div>
+          <div class="flag" id="flag1">
+            <div id="flag2"></div>
+            <div id="flag3"></div>
+            <div id="flag4"></div>
+            <div id="flag5"></div>
+          </div>
+          <div class="tower-roof"></div>
+          <div class="tower-roof" id="tower-roof-border"></div>
+          <div class="tower-roof" id="tower-roof-shadow"></div>
+          <div class="tower-roof" id="tower-roof-sun"></div>
+        </div>
+        <div class="castle-separation" id="castle-separation1">
+          <div class="castle-separation-roof">
+            <div class="roof-brick"></div>
+            <div class="roof-brick"></div>
+            <div class="roof-brick"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+          </div>
+        </div>
+        <div class="tower" id="tower1">
+          <div class="balcony" id="balcony-tower1">
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic" id="last-pic"></div>
+          </div>
+          <div class="door-glow" id="glow-tower"></div>
+          <div class="window" id="window-tower">
+            <div class="window-bottom" id="window-bottom-tower"></div>
+          </div>
+          <div class="brick-tower" id="brick-tower1">
+            <div class="line"></div>
+          </div>
+          <div class="brick-towerbis" id="brick-towerbis1">
+            <div class="line"></div>
+            <div class="brick" id="brick-double"></div>
+          </div>
+        </div>
+        <div class="tower" id="tower5">
+          <div class="balcony" id="balcony-tower5">
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic" id="last-pic"></div>
+          </div>
+          <div class="door-glow" id="glow-tower"></div>
+          <div class="window" id="window-tower">
+            <div class="window-bottom" id="window-bottom-tower"></div>
+          </div>
+          <div class="brick-tower" id="brick-tower5">
+            <div class="line"></div>
+          </div>
+          <div class="brick-towerbis" id="brick-towerbis5">
+            <div class="line"></div>
+            <div class="brick" id="brick-double"></div>
+          </div>
+          <div class="tower-second-floor">
+            <div class="window" id="window-tower-roof">
+              <div class="window-bottom" id="window-bottom-tower-roof"></div>
+            </div>
+          </div>
+          <div class="door-glow" id="tower-roof-glow"></div>
+          <div class="roof-tile" id="roof-tile1"></div>
+          <div class="roof-tile" id="roof-tile2">
+            <div class="roof-tile" id="roof-tile3"></div>
+          </div>
+          <div class="flagpole"></div>
+          <div class="flag" id="flag1">
+            <div id="flag2"></div>
+            <div id="flag3"></div>
+            <div id="flag4"></div>
+            <div id="flag5"></div>
+          </div>
+          <div class="tower-roof"></div>
+          <div class="tower-roof" id="tower-roof-border"></div>
+          <div class="tower-roof" id="tower-roof-shadow"></div>
+          <div class="tower-roof" id="tower-roof-sun"></div>
+        </div>
+        <div class="castle-base">
+          <div class="wall-base">
+            <div class="machicolation" id="machicolation1"></div>
+            <div class="machicolation-separation"></div><!-- @whitespace
+                        -->
+            <div class="machicolation"></div>
+            <div class="machicolation-separation"></div><!-- @whitespace
+                        -->
+            <div class="machicolation"></div>
+            <div class="machicolation-separation"></div><!-- @whitespace
+                        -->
+            <div class="machicolation"></div>
+            <div class="machicolation-separation"></div><!-- @whitespace
+                        -->
+            <div class="machicolation"></div>
+          </div>
+          <div class="window" id="window-castle-base1">
+            <div class="window-bottom" id="window-bottom-castle-base1"></div>
+          </div>
+          <div class="brick" id="brick-castle-base1">
+            <div class="line"></div>
+          </div>
+          <div class="brick-door" id="brick-door1"></div>
+          <div class="brick-door" id="brick-door2"></div>
+          <div class="brick-door" id="brick-door3"></div>
+          <div class="brick-door" id="brick-door4"></div>
+          <div class="brick-door" id="brick-door5"></div>
+          <div class="brick-door" id="brick-door6"></div>
+          <div class="brick-door" id="brick-door7"></div>
+          <div class="main-door">
+            <div class="door-crack" id="door-crack1"></div>
+            <div class="door-crack-dashed" id="door-crack1dashed"></div>
+            <div class="door-crack" id="door-crack1bis"></div>
+            <div class="door-glow" id="door-glow1"></div>
+            <div class="door-crack" id="door-crack2"></div>
+            <div class="door-crack" id="door-crack3"></div>
+            <div class="door-crack-dashed" id="door-crack3dashed"></div>
+            <div class="door-crack" id="door-crack3bis"></div>
+            <div class="door-glow" id="door-glow2"></div>
+            <div class="door-crack" id="door-crack4"></div>
+            <div class="door-crack" id="door-crack4bis"></div>
+          </div>
+          <div class="brick-door" id="brick-door8">
+            <div class="brick-door-separation"></div>
+          </div>
+          <div class="brick" id="brick-castle-base2">
+            <div class="line"></div>
+          </div>
+          <div class="brick-door" id="brick-door9"></div>
+          <div class="brick-door" id="brick-door10"></div>
+          <div class="brick-door" id="brick-door11"></div>
+          <div class="brick-door" id="brick-door12"></div>
+          <div class="brick-door" id="brick-door13"></div>
+          <div class="brick-door" id="brick-door14"></div>
+          <div class="brick-door" id="brick-door15"></div>
+          <div class="window" id="window-castle-base2">
+            <div class="window-bottom" id="window-bottom-castle-base2"></div>
+          </div>
+          <div class="brick" id="brick-castle-base3">
+            <div class="line"></div>
+            <div class="brick" id="brick-double"></div>
+          </div>
+        </div>
+        <div class="castle-base-second-floor">
+          <div class="window" id="window-castle-second-floor1">
+            <div class="window-bottom"></div>
+          </div>
+          <div class="window" id="window-castle-second-floor2">
+            <div class="window-bottom"></div>
+          </div>
+          <div class="window" id="window-castle-second-floor3">
+            <div class="window-bottom"></div>
+          </div>
+          <div class="balcony" id="balcony-second-floor">
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div><!-- @whitespace
+                -->
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic" id="last-pic"></div>
+          </div>
+        </div>
+        <div class="tower-second-floor" id="third-floor-main-catle">
+          <div class="window" id="window-main-castle-third-floor">
+            <div class="window-bottom" id="window-bottom-tower-roof"></div>
+          </div>
+        </div>
+        <div class="door-glow" id="main-castle-roof-glow"></div>
+        <div class="roof-tile" id="main-castle-roof-tile1"></div>
+        <div class="roof-tile" id="main-castle-roof-tile2">
+          <div class="roof-tile" id="roof-tile3"></div>
+        </div>
+        <div class="flagpole" id="main-castle-flagpole"></div>
+        <div class="flag" id="main-castle-flag1">
+          <div id="main-castle-flag2"></div>
+          <div id="main-castle-flag3"></div>
+          <div id="main-castle-flag4"></div>
+          <div id="main-castle-flag5"></div>
+        </div>
+        <div class="tower-roof" id="main-castle-roof"></div>
+        <div class="tower-roof" id="main-castle-roof-border"></div>
+        <div class="tower-roof" id="main-castle-roof-shadow"></div>
+        <div class="tower-roof" id="main-castle-roof-sun"></div>
+        <div class="tower" id="tower6">
+          <div class="balcony" id="balcony-tower6">
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic" id="last-pic"></div>
+          </div>
+          <div class="door-glow" id="glow-tower"></div>
+          <div class="window" id="window-tower">
+            <div class="window-bottom" id="window-bottom-tower"></div>
+          </div>
+          <div class="brick-tower" id="brick-tower6">
+            <div class="line"></div>
+          </div>
+          <div class="brick-towerbis" id="brick-towerbis6">
+            <div class="line"></div>
+            <div class="brick" id="brick-double"></div>
+          </div>
+          <div class="tower-second-floor">
+            <div class="window" id="window-tower-roof">
+              <div class="window-bottom" id="window-bottom-tower-roof"></div>
+            </div>
+          </div>
+          <div class="door-glow" id="tower-roof-glow"></div>
+          <div class="roof-tile" id="roof-tile1"></div>
+          <div class="roof-tile" id="roof-tile2">
+            <div class="roof-tile" id="roof-tile3"></div>
+          </div>
+          <div class="flagpole"></div>
+          <div class="flag" id="flag1">
+            <div id="flag2"></div>
+            <div id="flag3"></div>
+            <div id="flag4"></div>
+            <div id="flag5"></div>
+          </div>
+          <div class="tower-roof"></div>
+          <div class="tower-roof" id="tower-roof-border"></div>
+          <div class="tower-roof" id="tower-roof-shadow"></div>
+          <div class="tower-roof" id="tower-roof-sun"></div>
+        </div>
+        <div class="tower" id="tower2">
+          <div class="balcony" id="balcony-tower2">
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic" id="last-pic"></div>
+          </div>
+          <div class="door-glow" id="glow-tower"></div>
+          <div class="window" id="window-tower">
+            <div class="window-bottom" id="window-bottom-tower"></div>
+          </div>
+          <div class="brick-tower" id="brick-tower2">
+            <div class="line"></div>
+          </div>
+          <div class="brick-towerbis" id="brick-towerbis2">
+            <div class="line"></div>
+            <div class="brick" id="brick-double"></div>
+          </div>
+        </div>
+        <div class="castle-separation" id="castle-separation2">
+          <div class="castle-separation-roof">
+            <div class="roof-brick"></div>
+            <div class="roof-brick"></div>
+            <div class="roof-brick"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+          </div>
+        </div>
+        <div class="tower" id="tower4">
+          <div class="balcony" id="balcony-tower4">
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic"></div>
+            <div class="pic-separation"></div><!-- @whitespace
+                -->
+            <div class="pic" id="last-pic"></div>
+          </div>
+          <div class="door-glow" id="glow-tower"></div>
+          <div class="window" id="window-tower">
+            <div class="window-bottom" id="window-bottom-tower"></div>
+          </div>
+          <div class="brick-tower" id="brick-tower4">
+            <div class="line"></div>
+          </div>
+          <div class="brick-towerbis" id="brick-towerbis4">
+            <div class="line"></div>
+            <div class="brick" id="brick-double"></div>
+          </div>
+          <div class="tower-second-floor">
+            <div class="window" id="window-tower-roof">
+              <div class="window-bottom" id="window-bottom-tower-roof"></div>
+            </div>
+          </div>
+          <div class="door-glow" id="tower-roof-glow"></div>
+          <div class="roof-tile" id="roof-tile1"></div>
+          <div class="roof-tile" id="roof-tile2">
+            <div class="roof-tile" id="roof-tile3"></div>
+          </div>
+          <div class="flagpole"></div>
+          <div class="flag" id="flag1">
+            <div id="flag2"></div>
+            <div id="flag3"></div>
+            <div id="flag4"></div>
+            <div id="flag5"></div>
+          </div>
+          <div class="tower-roof"></div>
+          <div class="tower-roof" id="tower-roof-border"></div>
+          <div class="tower-roof" id="tower-roof-shadow"></div>
+          <div class="tower-roof" id="tower-roof-sun"></div>
+        </div>
+      </div>
+
+      <!-- End of castle -->
+      <div class="christmas-tree">
+
+      </div>
+
+    </main>
+    <!-- End of main section -->
+    <!-- Footer -->
+    <footer>
+      <ul class="lights">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </footer>
+    <!-- End of footer -->
+  </div>
+  <!-- End of wrapper -->
+
+  <script>
+    function toggleLight() {
+      const list = document.querySelectorAll("footer ul li");
+      list.forEach((li, index) => {
+        if (index % 2 === 0) {
+          li.classList.toggle("run-animation-2");
+        } else if (index % 4 === 1) {
+          li.classList.toggle("run-animation-3");
+        } else if (index % 4 === 3) {
+          li.classList.toggle("run-animation-1");
+        }
+      });
+    }
+    function toggleTime() {
+      const backgroundSection = document.querySelector(".background-section");
+      const dayNight = document.querySelector(".sun");
+      const stars = document.querySelector(".stars");
+      backgroundSection.classList.toggle("night-background");
+      dayNight.classList.toggle("moon");
+      stars.classList.toggle("stars-toggle");
+    }
+    function toggleSnow() {
+      const snowDiv = document.querySelector(".snowflakes");
+      snowDiv.classList.toggle("snowflakes-show");
+    }
+  </script>
+</body>
+
+</html>
