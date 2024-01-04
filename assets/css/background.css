@@ -647,7 +647,7 @@ Mountains
   transform: skewX(18deg);
 }
 
-.snow-fall{
+.snow-fall {
   position: absolute;
   content: '';
   bottom: -135px;
@@ -682,7 +682,7 @@ Mountains
   transform: skewX(18deg);
 }
 
-.mountain-snow{
+.mountain-snow {
   position: absolute;
   content: '';
   bottom: -97px;
@@ -694,7 +694,7 @@ Mountains
   z-index: 6;
 }
 
-.mountain-snow-shadow{
+.mountain-snow-shadow {
   position: absolute;
   content: '';
   bottom: -85px;
@@ -710,27 +710,32 @@ Mountains
 
 
 /* right side mountains */
-.right-side-position{
+.right-side-position {
   left: 78%;
 }
-.right-side-position-snow{
+
+.right-side-position-snow {
   left: -50px;
 }
-.right-side-position-shadow{
+
+.right-side-position-shadow {
   left: 86.7%;
 }
-.right-side-position-m{
-  left:73.3%
+
+.right-side-position-m {
+  left: 73.3%
 }
-.right-side-position-m3{
-  left:68%;
+
+.right-side-position-m3 {
+  left: 68%;
   border-top: 251px solid transparent;
   border-right: 132px solid transparent;
   border-left: 139px solid transparent;
   border-bottom: 100px solid green;
 }
-.right-side-position-m3-shadow{
-  left:70.7%;
+
+.right-side-position-m3-shadow {
+  left: 70.7%;
   border-top: 251px solid transparent;
   border-right: 120px solid transparent;
   border-left: 0px solid transparent;
@@ -740,15 +745,33 @@ Mountains
 /* grass */
 
 .ground {
-  background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/56901/grass_tile-tinypng.png") repeat-x 0 0 transparent;    
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/56901/grass_tile-tinypng.png") repeat-x 0 0 transparent;
   position: absolute;
   bottom: -8px;
   left: 0;
-  z-index:6;
+  z-index: 6;
   width: 100%;
   /* height: 200px; */
-  min-height:80px;
+  min-height: 80px;
   background-size: 25% auto;
+}
+
+
+/* background bottom */
+
+.background-bottom{
+  position: absolute;
+  top:65%;
+}
+.bb{
+  position: absolute;
+  top: 50%; 
+  transform: translateY(-50%); 
+  background: url(../img/klipartz.com.png) no-repeat;
+  height: 700px; 
+  width: 100vw; 
+  background-size: cover; 
+  z-index: -99;
 }
 
 
@@ -867,14 +890,15 @@ footer {
 }
 
 /* christmas tree move to the top  */
-.christmas-tree {
+.christmas-tree-right-side {
   flex-grow: 1;
   flex-basis: 20%;
 }
 
-.snowman {
+.christmas-trees {
   flex-grow: 1;
   flex-basis: 20%;
+  position: relative;
 }
 
 .windows {
