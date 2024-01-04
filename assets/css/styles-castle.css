@@ -51,8 +51,8 @@ body {
 .wall-base {
     bottom: -4px;
     position: relative;
-    left: 448px;
-    bottom: 23px;
+    left: 424px;
+    bottom: 22px;
     display: inline-flex;
 }
 
@@ -70,7 +70,7 @@ body {
 .machicolation-separation {
     position: relative;
     bottom: 3px;
-    width: 101px;
+    width: 104px;
     height: 25px;
     border-bottom: 2px solid var(--border-color);
 }
@@ -105,11 +105,11 @@ body {
 }
 
 #brick-door1 {
-    right: 30px
+    right: 40px
 }
 
 #brick-door15 {
-    right: 440px
+    right: 422px
 }
 
 #brick-door2,
@@ -122,11 +122,11 @@ body {
 }
 
 #brick-door2 {
-    right: 52px
+    right: 62px
 }
 
 #brick-door14 {
-    right: 418px
+    right: 402px
 }
 
 #brick-door3,
@@ -139,12 +139,12 @@ body {
 }
 
 #brick-door3 {
-    right: 84px;
+    right: 92px;
     rotate: 1deg;
 }
 
 #brick-door13 {
-    right: 386px;
+    right: 372px;
     rotate: -1deg;
 }
 
@@ -158,12 +158,12 @@ body {
 }
 
 #brick-door4 {
-    right: 100px;
+    right: 106px;
     rotate: 15deg;
 }
 
 #brick-door12 {
-    right: 370px;
+    right: 357px;
     rotate: -15deg;
 }
 
@@ -177,12 +177,12 @@ body {
 }
 
 #brick-door5 {
-    right: 107px;
+    right: 111px;
     rotate: 35deg;
 }
 
 #brick-door11 {
-    right: 363px;
+    right: 352px;
     rotate: -35deg;
 }
 
@@ -196,12 +196,12 @@ body {
 }
 
 #brick-door6 {
-    right: 111px;
+    right: 114px;
     rotate: 45deg;
 }
 
 #brick-door10 {
-    right: 359px;
+    right: 349px;
     rotate: -45deg;
 }
 
@@ -220,7 +220,7 @@ body {
 }
 
 #brick-door9 {
-    right: 360px;
+    right: 354px;
     rotate: -68deg;
 }
 
@@ -272,7 +272,7 @@ body {
 
 #door-crack1 {
     width: 60px;
-    top: 190px;
+    top: 189px;
 }
 
 #door-crack1dashed {
@@ -295,7 +295,7 @@ body {
 #door-crack3bis {
     width: 80px;
     left: 88px;
-    top: 145px;
+    top: 143px;
 }
 
 #door-crack3dashed {
@@ -356,8 +356,8 @@ body {
     border-bottom-right-radius: 15%;
     border-top-right-radius: 15%;
     border-top-left-radius: 15%;
-    right: 14px;
-    top: 60px;
+    right: 12px;
+    top: 56px;
     background-color: var(--castle-base-color);
 }
 
@@ -400,7 +400,7 @@ body {
 }
 
 #brick-double {
-    top: 9px;
+    top: 5px;
     left: 15px;
 }
 
@@ -439,7 +439,7 @@ body {
 
 #tower2 {
     left: 601px;
-    bottom: 2251px;
+    bottom: 2252px;
 }
 
 #window-tower {
@@ -486,8 +486,8 @@ body {
     width: 30px;
     height: 15px;
     position: relative;
-    bottom: 16px;
-    right: -2px;
+    bottom: 15px;
+    right: 2px;
     display: flex;
     flex-shrink: 0;
     border-top: 2px solid var(--border-color);
@@ -503,7 +503,7 @@ body {
 }
 
 .pic-separation {
-    width: 10px;
+    width: 14px;
     position: relative;
     display: flex;
     flex-shrink: 0;
@@ -548,7 +548,7 @@ body {
 #balcony-second-floor {
     width: 690px;
     flex-shrink: 0;
-    right: 180px;
+    right: 175px;
 }
 
 .castle-separation,
@@ -577,18 +577,18 @@ body {
 }
 
 .tile {
-    width: 30px;
+    width: 33px;
     height: 17px;
     border-top-right-radius: 100%;
     border-top-left-radius: 100%;
-    right: 117px;
+    right: 121px;
 }
 
 .roof-brick {
     width: 40px;
-    height: 10px;
-    top: 18px;
-    right: 15px;
+    height: 14px;
+    top: 15px;
+    right: 11px;
 }
 
 #castle-separation1 {
@@ -604,13 +604,13 @@ body {
 
 #castle-separation2 {
     left: 700px;
-    bottom: 2451px;
+    bottom: 2452px;
 }
 
 #tower4 {
     height: 321px;
     left: 799px;
-    bottom: 2772px;
+    bottom: 2773px;
 }
 
 .tower-second-floor,
@@ -649,13 +649,13 @@ body {
     border-style: solid;
     border-width: 0 60px 130px 60px;
     border-color: transparent transparent var(--tower-roof-color);
-    bottom: 696px;
+    bottom: 698px;
     right: 10px;
 }
 
 #tower-roof-border {
     z-index: -1;
-    bottom: 829px;
+    bottom: 831px;
     right: 13px;
     border-width: 0 63px 135px 63px;
     border-color: transparent transparent var(--border-color);
@@ -663,7 +663,7 @@ body {
 
 #tower-roof-shadow {
     z-index: 2;
-    bottom: 952px;
+    bottom: 954px;
     left: 57px;
     rotate: -2deg;
     border-width: 0px 50px 121px 0;
@@ -706,7 +706,7 @@ body {
     flex-grow: 0;
     width: 0;
     height: 0;
-    left: 37px;
+    left: 36px;
     border-top: 17px solid var(--flag-color);
     border-right: 32px solid transparent;
 }
@@ -716,8 +716,8 @@ body {
     flex-grow: 0;
     width: 0;
     height: 0;
-    left: 5px;
-    top: 11px;
+    left: 4px;
+    top: 9px;
     border-right: 35px solid transparent;
     border-bottom: 17px solid var(--flag-color);
 }
@@ -727,7 +727,7 @@ body {
     width: 0;
     height: 0;
     bottom: 2px;
-    right: 28px;
+    right: 30px;
     border-right: 40px solid transparent;
     border-top: 20px solid var(--border-color);
 }
@@ -736,8 +736,8 @@ body {
     z-index: 1;
     width: 0;
     height: 0;
-    right: 68px;
-    top: 12px;
+    right: 69px;
+    top: 11px;
     border-right: 40px solid transparent;
     border-bottom: 17px solid var(--border-color);
 }
@@ -752,13 +752,13 @@ body {
 
 #roof-tile1 {
     z-index: 2;
-    bottom: 500px;
+    bottom: 470px;
     left: 42px;
 }
 
 #roof-tile2 {
     z-index: 2;
-    bottom: 470px;
+    bottom: 440px;
     left: 20px;
 }
 
@@ -775,7 +775,7 @@ body {
 #tower6 {
     z-index: -2;
     left: 700px;
-    bottom: 1970px;
+    bottom: 1949px;
 }
 
 #third-floor-main-catle {
@@ -801,14 +801,14 @@ body {
 }
 
 #main-castle-roof {
-    bottom: 1871px;
+    bottom: 1892px;
     left: 270px;
     border-width: 0 85px 180px 85px;
 }
 
 #main-castle-roof-border {
     z-index: -1;
-    bottom: 2053px;
+    bottom: 2075px;
     left: 267px;
     border-width: 0 88px 185px 88px;
     border-color: transparent transparent var(--border-color);
@@ -816,7 +816,7 @@ body {
 
 #main-castle-roof-shadow {
     z-index: 2;
-    bottom: 2227px;
+    bottom: 2247px;
     left: 363px;
     rotate: -1deg;
     border-width: 0px 75px 171px 0;
@@ -834,25 +834,25 @@ body {
 }
 
 #main-castle-roof-tile1 {
-    bottom: 1615px;
+    bottom: 1595px;
     left: 321px;
     z-index: 2;
 }
 
 #main-castle-roof-tile2 {
-    bottom: 1560px;
+    bottom: 1540px;
     left: 343px;
     z-index: 2;
 }
 
 #main-castle-flagpole {
-    bottom: 1853px;
+    bottom: 1823px;
     left: 354px;
     height: 150px;
 }
 
 #main-castle-flag1 {
-    bottom: 2002px;
+    bottom: 1967px;
     left: 355px;
     height: 50px;
     width: 60px;
@@ -870,7 +870,7 @@ body {
     flex-grow: 0;
     width: 0;
     height: 0;
-    left: 60px;
+    left: 56px;
     border-top: 47px solid var(--flag-color);
     border-right: 70px solid transparent;
 }
@@ -880,8 +880,8 @@ body {
     flex-grow: 0;
     width: 0;
     height: 0;
-    right: 10px;
-    top: 3px;
+    right: 14px;
+    bottom: 1px;
     border-right: 70px solid transparent;
     border-bottom: 47px solid var(--flag-color);
 }
@@ -891,7 +891,7 @@ body {
     width: 0;
     height: 0;
     bottom: 2px;
-    right: 78px;
+    right: 82px;
     border-right: 73px solid transparent;
     border-top: 50px solid var(--border-color);
 }
@@ -900,8 +900,8 @@ body {
     z-index: 1;
     width: 0;
     height: 0;
-    right: 151px;
-    top: 2px;
+    right: 154px;
+    bottom: 2px;
     border-right: 73px solid transparent;
     border-bottom: 50px solid var(--border-color);
 }
