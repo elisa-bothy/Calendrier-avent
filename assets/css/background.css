@@ -761,18 +761,19 @@ Mountains
 
 /* background bottom */
 
-.background-bottom{
+.background-bottom {
   position: absolute;
-  top:65%;
+  top: 65%;
 }
-.bb{
+
+.bb {
   position: absolute;
-  top: 50%; 
-  transform: translateY(-50%); 
+  top: 50%;
+  transform: translateY(-50%);
   background: url(../img/klipartz.com.png) no-repeat;
-  height: 700px; 
-  min-width: 2110px; 
-  background-size: cover; 
+  height: 700px;
+  min-width: 2110px;
+  background-size: cover;
   z-index: -99;
 }
 
@@ -902,21 +903,3 @@ footer {
   flex-basis: 20%;
   position: relative;
 }
-
-.windows {
-  flex-basis: 60%;
-  /* display: flex;
-  max-width: 300px;
-  width: 100%;
-  height: 100vh;
-  flex-wrap: wrap; */
-}
-
-/* .case{
-  border: 2px solid black;
-  /* max-width: 200px;
-  max-height: 150px; 
-  justify-content: center;
-  margin: 10px;
-  padding: 20px;
-} */
