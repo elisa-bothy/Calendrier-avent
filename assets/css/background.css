@@ -70,7 +70,9 @@ Wrapper
 .wrapper {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  zoom: 67%;
+  min-height: 967px;
 }
 
 /*
@@ -769,7 +771,7 @@ Mountains
   transform: translateY(-50%); 
   background: url(../img/klipartz.com.png) no-repeat;
   height: 700px; 
-  width: 100vw; 
+  min-width: 2110px; 
   background-size: cover; 
   z-index: -99;
 }
