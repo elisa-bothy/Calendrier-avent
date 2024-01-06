@@ -28,7 +28,7 @@ body {
     /* pour travailler plus efficacement
     à ne pas oublier de modifier */
     position: absolute;
-    top: -44%;
+    top: -40.3%;
     left: 30%;
     height: 100vh;
 }
@@ -603,13 +603,13 @@ body {
 }
 
 #castle-separation2 {
-    left: 700px;
+    left: 699px;
     bottom: 2452px;
 }
 
 #tower4 {
     height: 321px;
-    left: 799px;
+    left: 798px;
     bottom: 2773px;
 }
 
@@ -774,7 +774,7 @@ body {
 
 #tower6 {
     z-index: -2;
-    left: 700px;
+    left: 699px;
     bottom: 1949px;
 }
 
