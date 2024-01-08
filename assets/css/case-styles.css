@@ -13,14 +13,14 @@
 #h1{
     font-family: mario;
 }
+#h2{
+    font-size: 14px;
+}
 
-<<<<<<< HEAD
-=======
 #conteneur{
     height: 20px;
 }
 
->>>>>>> 8706dd461c229addfcc6d1dc737ea722b7a19c4a
 #conteneur img {
 	transition: all 1s ease;
     border-top-right-radius: 100%;
