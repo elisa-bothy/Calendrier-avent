@@ -33,29 +33,18 @@
     z-index: 99;
       
 }
-<<<<<<< HEAD
-#conteneur img {
-=======
 .case img {
->>>>>>> 8706dd461c229addfcc6d1dc737ea722b7a19c4a
 	opacity:0;
 	transform:scale(0);
 	transform-origin: top center;   
     z-index: 999; 
 }
-<<<<<<< HEAD
-#conteneur:hover img {
-=======
 .case:hover img {
->>>>>>> 8706dd461c229addfcc6d1dc737ea722b7a19c4a
 	opacity:1;
 	transform:scale(1);
 	transform-origin: center center;
     z-index: 999;
-<<<<<<< HEAD
-=======
     cursor: pointer;
->>>>>>> 8706dd461c229addfcc6d1dc737ea722b7a19c4a
 }
 
 
@@ -184,10 +173,6 @@
 
 .case17 {
     position: absolute;
-<<<<<<< HEAD
-    top: 95%;
-=======
     top: 80%;
->>>>>>> 8706dd461c229addfcc6d1dc737ea722b7a19c4a
     left: 45%;
 }
