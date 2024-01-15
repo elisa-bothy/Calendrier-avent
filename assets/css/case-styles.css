@@ -76,6 +76,7 @@
     position: absolute;
     top: 275px;
     left: -1.3%;
+    z-index: 8;
 }
 
 .case2 {
@@ -100,12 +101,14 @@
     position: absolute;
     top: 59.8%;
     left: 7.6%;
+    z-index: 5;
 }
 
 .case6 {
     position: absolute;
     top: 2%;
     left: 43.6%;
+    z-index: 8;
 }
 
 .case7 {
